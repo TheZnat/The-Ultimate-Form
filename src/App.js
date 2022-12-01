@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Route, Routes} from "react-router-dom";
+
+import Layout from './Component/Layout'
+import Step1 from './Pages/Step1'
+import Step2 from './Pages/Step2'
+import Step3 from './Pages/Step3'
+import Result from "./Pages/Result";
+
+import DataContext from "./hoc/DataContext";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+       <DataContext>
+           <Routes>
+               <Route path="/" element={<Layout />}>
+                   <Route index element={<Step1 />}/>
+                   <Route path="/step2" element={<Step2 />}/>
+                   <Route path="/step3" element={<Step3 />}/>
+                   <Route path="/result" element={<Result />}/>
+               </Route>
+           </Routes>
+       </DataContext>
+   </>
   );
 }
 
