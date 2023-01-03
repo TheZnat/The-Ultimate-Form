@@ -3,15 +3,16 @@ import {Outlet} from "react-router-dom";
 
 import Header from './Header'
 
+import '../style/style.css'
+
 const Layout = () => {
     return (
-        <>
+        <div className="form-area">
             <Header />
             <main>
                 <Outlet />
             </main>
-            <footer>&copy; Mk</footer>
-        </>
+        </div>
     );
 };
 

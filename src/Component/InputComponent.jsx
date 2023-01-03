@@ -1,8 +1,6 @@
 import React, { forwardRef } from "react";
 import TextField from "@material-ui/core/TextField";
-import {useForm} from "react-hook-form";
-import { Controller } from 'react-hook-form';
-// import { Controller } from 'react-hook-form';
+
 
 const InputComponent = forwardRef((props, ref) => {
     return (

@@ -6,9 +6,7 @@ import Step1 from './Pages/Step1'
 import Step2 from './Pages/Step2'
 import Step3 from './Pages/Step3'
 import Result from "./Pages/Result";
-
 import DataContext from "./hoc/DataContext";
-
 import './App.css';
 
 function App() {
