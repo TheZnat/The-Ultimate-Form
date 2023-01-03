@@ -1,3 +1,14 @@
+#The form features include:
+
+- multi-step / wizard form
+- form field validation on blur ( using yup )
+- form field masking / normalisation
+- dependent form fields
+- custom form inputs
+- using react-hook-form with material-ui
+- file uploads using the dropzone ( using the react dropzone )
+- ---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
