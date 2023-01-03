@@ -7,7 +7,6 @@
 - custom form inputs
 - using react-hook-form with material-ui
 - file uploads using the dropzone ( using the react dropzone )
-- ---
 
 # Getting Started with Create React App
 
