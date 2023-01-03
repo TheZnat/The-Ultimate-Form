@@ -1,4 +1,4 @@
-#The form features include:
+# The form features include:
 
 - multi-step / wizard form
 - form field validation on blur ( using yup )
